@@ -12,7 +12,7 @@ function Jacobi_method() {
   let dataInTable=[];
   const [datatable,setd] = useState();
   const [column,setc] = useState();
-  const [dataAPI,setDa] = useState();
+  const [dataAPI,setDa] = useState([]);
   const [matrix,setM] = useState([])
   const [val,setV] = useState([])
   const [checkm,setcc] = useState(false)

@@ -14,7 +14,7 @@ addStyles();
 
 const Onepoint = () => {
 
-  const [dataAPI, setDa] = useState();
+  const [dataAPI, setDa] = useState([]);
   
 
   useEffect(() => {

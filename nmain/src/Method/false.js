@@ -15,7 +15,7 @@ addStyles();
 
 const False = () => {
 
-  const [dataAPI, setDa] = useState();
+  const [dataAPI, setDa] = useState([]);
   
 
   useEffect(() => {

@@ -5,7 +5,7 @@ import Select from 'react-select';
 import {clone,lcm,abs,add,multiply,subtract} from 'mathjs';
 function Guess_elimination() {
   const [ans,setans] = useState()
-  const [dataAPI,setDa] = useState();
+  const [dataAPI,setDa] = useState([]);
   const [matrix,setM] = useState([])
   const [val,setV] = useState([])
   const [matrixAPI,setMA] = useState([[0,0,0],[0,0,0],[0,0,0]])

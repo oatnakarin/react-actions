@@ -15,7 +15,7 @@ addStyles();
 
 const Newton = () => {
 
-  const [dataAPI, setDa] = useState(); 
+  const [dataAPI, setDa] = useState([]); 
 
   useEffect(() => {
 
