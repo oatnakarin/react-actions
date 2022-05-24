@@ -3,6 +3,7 @@ import { addStyles, EditableMathField } from "react-mathquill";
 import axios from 'axios';
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries,Crosshair} from 'react-vis';
 import Select from 'react-select';
+import 'antd/dist/antd.min.css';
 import { Table,Button,Input } from 'antd';
 import AlgebraLatex from 'algebra-latex'
 import {
@@ -22,14 +23,14 @@ const False = () => {
     let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjpbeyJ2YWx1ZSI6MCwibGFiZWwiOiJ4XjQtMTMiLCJMdmFsdWUiOjEuNSwiUnZhbHVlIjoyfSx7InZhbHVlIjoxLCJsYWJlbCI6InheMyArIDQiLCJMdmFsdWUiOi0yLCJSdmFsdWUiOjF9LHsidmFsdWUiOjIsImxhYmVsIjoieF4zKjItNCIsIkx2YWx1ZSI6MSwiUnZhbHVlIjoyfSx7InZhbHVlIjozLCJsYWJlbCI6InheMyp4XjItMSIsIkx2YWx1ZSI6LTIsIlJ2YWx1ZSI6Mn1dLCJpYXQiOjE2NTE1MjQxNzd9.N-DpnLdKqhigUHnvUxw-YDY01T0wR3pW2iWQz0gXvYA";
     try {
       axios.get(`http://localhost:4000/data/${token}`).then((respond)=>{
-          setDa(respond.data.data)
-          console.log(respond.data.data);
-        })
-    } catch (err) {
-      console.log(err);
-    }
+        setDa(respond.data.data)
+      })
+    }catch(err){
 
+    }
+    
   }, [])
+
 
   const [latex, setLatex] = useState("");
   const [Lvalue, setL] = useState(0);
@@ -280,4 +281,5 @@ const False = () => {
       </div>
     );
   };
+  
   export default False;
