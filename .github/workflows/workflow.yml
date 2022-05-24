@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         working-directory: ./nmain
-        run : |
-          npm install
-          npm build
-          npm test
+        run : npm install
+        working-directory: ./nmain
+        run : npm run build
+        working-directory: ./nmain
+        run : npm test
