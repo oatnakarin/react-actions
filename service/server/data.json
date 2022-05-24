@@ -1,0 +1,28 @@
+{
+    "bisec":[
+        {
+            "value": 0,
+            "label" : "x^4-13",
+            "Lvalue" : 1.5,
+            "Rvalue" : 2.0
+        },
+        {
+            "value": 1,
+            "label" : "x^3 + 4",
+            "Lvalue" : -2,
+            "Rvalue" : 1
+        },
+        {
+            "value": 2,
+            "label" : "x^3*2-4",
+            "Lvalue" : 1,
+            "Rvalue" : 2
+        },
+        {
+            "value": 3,
+            "label" : "x^3*x^2-1",
+            "Lvalue" : -2,
+            "Rvalue" : 2
+        }
+    ]
+}

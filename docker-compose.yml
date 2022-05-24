@@ -1,0 +1,14 @@
+
+version: "3.7"
+
+services:
+  app:
+    container_name: frontend
+    build: ./nmain
+    ports:
+      - 3000:3000
+  api:
+    container_name: backend
+    build: ./service
+    ports:
+      - 4000:4000

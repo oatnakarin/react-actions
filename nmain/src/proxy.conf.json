@@ -1,0 +1,7 @@
+{
+    "/matrix_data":{
+        "target" : "http://api:4000",
+        "secure" : false,
+        "changeOrigin": true
+    }
+}
